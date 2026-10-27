@@ -1,5 +1,7 @@
 # DigiPromise site — deploy runbook (static pages on WordPress)
 
+> **Source of truth:** private GitHub repo `digipromise/digipromise-site` (copy also on Malik's MacBook in ~/Projects/digipromise-site). Clone it, build, deploy, then commit + push every change.
+
 Live since 2 Oct 2026. 20 English + 20 Arabic pages (7 agents incl. Lilia) are static HTML served by a small PHP router inside the WordPress theme. WordPress still runs underneath (admin, AI News blog posts at /category/ai-news/, ROI tool).
 
 ## Where things live (cPanel → File Manager)
