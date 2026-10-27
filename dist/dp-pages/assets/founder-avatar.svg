@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Illustration of Malik, founder of DigiPromise">
+<defs>
+<radialGradient id="bg" cx="35%" cy="25%" r="85%"><stop offset="0" stop-color="#D9C2FF"/><stop offset=".55" stop-color="#9B3DFF"/><stop offset="1" stop-color="#3B0764"/></radialGradient>
+<linearGradient id="suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6D5FF"/><stop offset="1" stop-color="#C9A8F5"/></linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C9A5"/><stop offset="1" stop-color="#E2AD86"/></linearGradient>
+<clipPath id="c"><circle cx="160" cy="160" r="132"/></clipPath>
+</defs>
+<rect width="320" height="320" rx="44" fill="#120C2A"/>
+<circle cx="160" cy="160" r="142" fill="none" stroke="#E879B0" stroke-width="3" opacity=".55"/>
+<circle cx="160" cy="160" r="132" fill="url(#bg)"/>
+<g clip-path="url(#c)">
+  <!-- shoulders / blazer -->
+  <path d="M40 330 C44 262 86 236 126 228 L194 228 C234 236 276 262 280 330 Z" fill="url(#suit)"/>
+  <!-- waistcoat (check) -->
+  <path d="M126 228 L160 300 L194 228 Z" fill="#5B6478"/>
+  <path d="M134 244 L186 244 M140 258 L180 258 M147 272 L173 272 M146 236 L166 290 M174 236 L154 290" stroke="#7D879C" stroke-width="3"/>
+  <!-- shirt + tie -->
+  <path d="M138 222 L160 262 L182 222 Z" fill="#FFFFFF"/>
+  <path d="M154 236 L166 236 L170 246 L163 290 L157 290 L150 246 Z" fill="#1E2A5A"/>
+  <path d="M138 222 L152 244 L160 232 Z M182 222 L168 244 L160 232 Z" fill="#F1F1F6"/>
+  <!-- lapels -->
+  <path d="M126 228 L148 280 L136 300 L112 240 Z" fill="#D4B8FF"/>
+  <path d="M194 228 L172 280 L184 300 L208 240 Z" fill="#D4B8FF"/>
+  <!-- neck -->
+  <path d="M142 196 L178 196 L180 226 L160 236 L140 226 Z" fill="#D9A07A"/>
+  <!-- ears -->
+  <ellipse cx="111" cy="146" rx="9" ry="14" fill="#E2AD86"/>
+  <ellipse cx="209" cy="146" rx="9" ry="14" fill="#E2AD86"/>
+  <!-- face -->
+  <path d="M112 128 C112 92 134 74 160 74 C186 74 208 92 208 128 L208 156 C208 192 186 214 160 214 C134 214 112 192 112 156 Z" fill="url(#skin)"/>
+  <!-- beard -->
+  <path d="M112 146 C114 170 120 198 140 210 C150 216 170 216 180 210 C200 198 206 170 208 146 C202 160 196 168 186 170 C178 160 142 160 134 170 C124 168 118 160 112 146 Z" fill="#2A1C16"/>
+  <!-- mouth -->
+  <path d="M146 182 C153 187 167 187 174 182" stroke="#B9746A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- moustache -->
+  <path d="M138 172 C146 164 156 166 160 170 C164 166 174 164 182 172 C174 176 166 176 160 174 C154 176 146 176 138 172 Z" fill="#2A1C16"/>
+  <!-- nose -->
+  <path d="M160 132 L156 156 C158 160 164 160 166 156" stroke="#C98E6A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="140" cy="136" rx="6" ry="7" fill="#2A1C16"/>
+  <ellipse cx="180" cy="136" rx="6" ry="7" fill="#2A1C16"/>
+  <circle cx="142" cy="134" r="2" fill="#fff"/><circle cx="182" cy="134" r="2" fill="#fff"/>
+  <!-- brows -->
+  <path d="M126 122 C134 116 146 116 152 120" stroke="#2A1C16" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M168 120 C174 116 186 116 194 122" stroke="#2A1C16" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- hair -->
+  <path d="M108 128 C104 92 122 62 158 60 C194 58 216 80 212 126 C206 108 200 100 192 96 C176 104 146 102 130 92 C120 100 112 110 108 128 Z" fill="#2A1C16"/>
+  <path d="M134 74 C150 62 178 62 194 76 C178 70 156 70 134 74 Z" fill="#4A3329"/>
+</g>
+<circle cx="256" cy="252" r="22" fill="#120C2A"/><circle cx="256" cy="252" r="15" fill="#22C55E"/>
+</svg>

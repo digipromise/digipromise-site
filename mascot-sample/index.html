@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mascot Style Samples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--muted:#5F5F80;--lav:#F6F1FF;--purple:#7B2FBE;--purple2:#9B3DFF;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,sans-serif}
+header{padding:40px 20px 10px;text-align:center}h1{font-size:clamp(26px,4vw,40px);margin:0 0 8px;letter-spacing:-.02em}
+header p{color:var(--muted);margin:0 auto;max-width:620px}
+.set{margin:28px auto;max-width:1200px;padding:28px 16px 34px;border-radius:28px;background:linear-gradient(180deg,#F6F1FF,#EFE6FF)}
+.set h2{text-align:center;margin:0 0 4px;font-size:22px}.set .sub{text-align:center;color:var(--muted);margin:0 0 10px;font-size:14px}
+.cf{position:relative;height:430px;overflow:hidden}
+.it{position:absolute;left:50%;top:10px;width:280px;margin-left:-140px;text-align:center;transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s,filter .6s;cursor:pointer}
+.m{position:relative;width:230px;height:230px;margin:0 auto 16px;animation:breathe 4s ease-in-out infinite}
+.m img{width:100%;height:100%;display:block;filter:drop-shadow(0 22px 22px rgba(70,30,120,.22))}
+.eyes{position:absolute;inset:0;transition:transform .25s ease-out;pointer-events:none}
+.eyes i{position:absolute;top:38%;width:12%;height:21%;border-radius:50%;background:radial-gradient(circle at 40% 30%,#fff,#ECE7F3);box-shadow:0 2px 4px rgba(0,0,0,.2);animation:blink 5s infinite}
+.eyes i:first-child{left:32%}.eyes i:last-child{right:32%}
+.it h3{margin:0;font-size:22px}.it .tag{font-size:12px;font-weight:700;color:var(--purple);letter-spacing:.08em;text-transform:uppercase}
+.it p{color:var(--muted);font-size:14px;margin:6px 0 0;transition:opacity .3s}.it:not(.c) p{opacity:0}
+.nav{position:absolute;top:110px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(123,47,190,.2);background:#fff;font-size:20px;cursor:pointer;z-index:30}
+.prev{left:calc(50% - 200px)}.next{right:calc(50% - 200px)}
+.dots{display:flex;justify-content:center;gap:6px}.dots b{width:7px;height:7px;border-radius:9px;background:#D4B8FF;transition:width .3s}.dots b.on{width:22px;background:var(--purple2)}
+@keyframes breathe{50%{transform:translateY(-8px) scale(1.03)}}@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.pick{text-align:center;margin:6px 0 40px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){.m,.eyes i{animation:none}}
+@media(max-width:600px){.m{width:180px;height:180px}.cf{height:360px}.prev{left:8px}.next{right:8px}}
+</style></head><body>
+<header><h1>Pick a mascot style</h1><p>Both sets use your images with the moving eyes and auto-rotating carousel. Move your mouse around and watch the eyes follow.</p></header>
+<section class="set" data-set="a"><h2>Set A · Feathery swirl</h2><p class="sub">Soft fur with a feather swirl on the left</p><div class="cf"></div><div class="dots"></div></section>
+<section class="set" data-set="b"><h2>Set B · Feather scales</h2><p class="sub">Round ball covered in small fluffy feather scales</p><div class="cf"></div><div class="dots"></div></section>
+<p class="pick">Reply <b>A</b> or <b>B</b> and I'll put that set live on every page.</p>
+<script>
+const AG=[['iris','IRIS','Real estate','Answers enquiries and books viewings.'],['aura','AURA','Ecommerce','Recommends products and recovers carts.'],['nova','Nova','Hospitality','Takes bookings, cuts no-shows.'],['luna','Luna','Health & fitness','Books classes, nudges renewals.'],['lara','Lara','Car rental','Quotes rentals, confirms bookings.'],['stella','Stella','AI calling agent','Picks up every call.'],['lilia','Lilia','Personal assistant','Inbox, calendar and daily briefing.']];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('.set').forEach(sec=>{
+  const s=sec.dataset.set,cf=sec.querySelector('.cf'),dots=sec.querySelector('.dots');
+  cf.innerHTML='<button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button>'+AG.map(a=>`<div class="it"><div class="m"><img src="${s}-${a[0]}.webp" alt="${a[1]} mascot" width="230" height="230"><span class="eyes"><i></i><i></i></span></div><span class="tag">${a[2]}</span><h3>${a[1]}</h3><p>${a[3]}</p></div>`).join('');
+  dots.innerHTML=AG.map(()=>'<b></b>').join('');
+  const it=[...cf.querySelectorAll('.it')],n=it.length;let c=0,t,rs;
+  const go=k=>{c=(k+n)%n;it.forEach((el,i)=>{let o=((i-c+n+3)%n)-3,a=Math.abs(o);el.classList.toggle('c',!o);el.style.zIndex=10-a;el.style.opacity=a>2?0:1-a*.25;el.style.filter=a?`blur(${a*1.5}px)`:'none';el.style.transform=`translateX(${o*240}px) scale(${1-a*.2})`});[...dots.children].forEach((d,i)=>d.classList.toggle('on',i===c))};
+  const stop=()=>{clearInterval(t);clearTimeout(rs)},start=()=>{stop();if(!reduce)t=setInterval(()=>go(c+1),3500)},pause=()=>{stop();rs=setTimeout(start,5000)};
+  cf.querySelector('.prev').onclick=()=>{go(c-1);pause()};cf.querySelector('.next').onclick=()=>{go(c+1);pause()};
+  it.forEach((el,i)=>el.onclick=()=>{go(i);pause()});cf.onmouseenter=stop;cf.onmouseleave=pause;go(0);start();
+});
+let mx=null,my=null,raf=0,idle;
+const upd=()=>{raf=0;document.querySelectorAll('.m').forEach(m=>{const r=m.getBoundingClientRect(),e=m.querySelector('.eyes');let dx=0,dy=0;
+  if(mx!==null){const ax=mx-(r.left+r.width/2),ay=my-(r.top+r.height/2),d=Math.hypot(ax,ay)||1,k=Math.min(1,d/300);dx=ax/d*k;dy=ay/d*k}
+  e.style.transform=`translate(${(dx*r.width*.12).toFixed(1)}px,${(dy*r.height*.1).toFixed(1)}px)`})};
+const q=()=>{if(!raf)raf=requestAnimationFrame(upd)};
+addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;q();clearTimeout(idle);idle=setTimeout(()=>{mx=null;q()},4000)},{passive:true});
+addEventListener('scroll',q,{passive:true});
+if(!matchMedia('(hover: hover)').matches){let a=0;setInterval(()=>{a+=1.7;mx=innerWidth/2+Math.cos(a)*220;my=innerHeight/2+Math.sin(a*1.3)*160;q()},1600)}
+</script></body></html>

@@ -1,0 +1,36 @@
+<!-- Digi Branded Chat Widget -->
+
+
+<div class="digi-launcher" id="digiLauncher" role="button" aria-label="Open Digi chat">
+  <img class="digi-av" src="https://digipromise.com/wp-content/uploads/2026/06/Gemini_Generated_Image_kby6c5kby6c5kby6.png" alt="Digi"/>
+  <span class="digi-lbl">Ask Digi</span>
+  <div class="digi-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+  </div>
+</div>
+<div class="digi-greet" id="digiGreet" hidden><button class="digi-greet-x" id="digiGreetX" aria-label="Dismiss message">✕</button><p id="digiGreetTxt"></p></div>
+<div class="digi-panel" id="digiPanel" role="dialog" aria-label="Digi AI Chat">
+  <div class="digi-ph">
+    <img class="digi-ph-av" src="https://digipromise.com/wp-content/uploads/2026/06/Gemini_Generated_Image_kby6c5kby6c5kby6.png" alt="Digi"/>
+    <div>
+      <p class="digi-ph-name">Digi</p>
+      <p class="digi-ph-status"><span class="digi-dot"></span>Online · DigiPromise AI</p>
+    </div>
+    <button class="digi-x" id="digiClose" aria-label="Close chat">✕</button>
+  </div>
+  <div class="digi-alt"><a href="https://t.me/Digipromise_Support_bot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M5.4 11.8l11.6-4.5c.5-.2 1 .1.8 1l-2 9.3c-.1.7-.5.8-1.1.5l-3-2.2-1.5 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5c.2-.2 0-.3-.4-.1l-6.9 4.3-3-.9c-.6-.2-.7-.6.3-1z"/></svg>Telegram</a><button type="button" class="digi-talk" id="digiTalk" aria-label="Talk to Digi by voice">🎙 Talk</button></div>
+  <div class="digi-voice" id="digiVoice" hidden><span class="digi-vmic" aria-hidden="true">🎙</span><span class="digi-vst" id="digiVst" role="status">Connecting…</span><button type="button" class="digi-vend" id="digiVend">End call</button></div>
+  <div class="digi-msgs" id="digiMsgs">
+    <div class="digi-typing" id="digiTyping">
+      <img class="digi-msg-av" src="https://digipromise.com/wp-content/uploads/2026/06/Gemini_Generated_Image_kby6c5kby6c5kby6.png" alt="Digi"/>
+      <div class="digi-tbbl"><div class="digi-d"></div><div class="digi-d"></div><div class="digi-d"></div></div>
+    </div>
+  </div>
+  <div class="digi-foot">
+    <input class="digi-inp" id="digiInp" type="text" placeholder="Ask me anything..." maxlength="500" autocomplete="off" aria-label="Type your message"/>
+    <button class="digi-snd" id="digiSnd" aria-label="Send message">
+      <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/></svg>
+    </button>
+  </div>
+  <div class="digi-pwrd">Powered by <span>DigiPromise</span></div>
+</div>

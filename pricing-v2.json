@@ -1,0 +1,1163 @@
+{
+ "version": "2.1",
+ "updated": "2026-10-05",
+ "billing": {
+  "gcc_currency": "AED",
+  "default_currency": "USD",
+  "gcc_countries": [
+   "AE",
+   "SA",
+   "QA",
+   "KW",
+   "BH",
+   "OM"
+  ],
+  "gcc_timezones": [
+   "Asia/Dubai",
+   "Asia/Muscat",
+   "Asia/Riyadh",
+   "Asia/Qatar",
+   "Asia/Kuwait",
+   "Asia/Bahrain"
+  ],
+  "period": "month",
+  "setup_fee": {
+   "starter": {
+    "USD": 1365,
+    "AED": 5000
+   },
+   "growth": {
+    "USD": 2725,
+    "AED": 10000
+   },
+   "scale": {
+    "USD": 3405,
+    "AED": 12500
+   },
+   "enterprise": {
+    "USD": 4085,
+    "AED": 15000
+   },
+   "rule": "Charged once on monthly plans. Annual plans: setup fee fully waived on Starter, 50% off on all other plans. One setup fee per agent (the higher) when a client takes more than one plan."
+  },
+  "contract": "Monthly: cancel anytime. Annual: 12-month term, paid upfront.",
+  "guarantee": "Go-live guarantee: full setup fee refund if we cannot deliver the agreed scope",
+  "message_definition": "One message = one inbound or outbound chat message.",
+  "annual": {
+   "rule": "15% off monthly price, billed yearly upfront. Setup fee: Starter waived, other plans 50% off.",
+   "discount": 0.15
+  }
+ },
+ "dashboard_rule": "Every product includes the client dashboard (conversation records, analytics, usage and results) from Growth upward. Starter plans have no dashboard.",
+ "dashboard_levels": {
+  "starter": "Not included",
+  "growth": "Full client dashboard",
+  "scale": "Dashboard + downloadable reports",
+  "enterprise": "Custom dashboard + reports"
+ },
+ "products": [
+  {
+   "id": "iris",
+   "name": "IRIS",
+   "category": "Real estate",
+   "title": "IRIS — AI Lead Agent for Real Estate",
+   "url": "/ai-agents/real-estate/",
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 685,
+      "AED": 2500
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Website chat, lead capture to Google Sheets",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 6984,
+      "AED": 25500
+     },
+     "annual_monthly": {
+      "USD": 582,
+      "AED": 2125
+     },
+     "messages": 5000
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1065,
+      "AED": 3900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + WhatsApp, viewing booking",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 10860,
+      "AED": 39780
+     },
+     "annual_monthly": {
+      "USD": 905,
+      "AED": 3315
+     },
+     "messages": 12000
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "RAG trained on your listings, 3 agents, CRM sync",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "messages": 20000
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 1800,
+      "AED": 6599
+     },
+     "from": true,
+     "popular": false,
+     "includes": "Multi-branch, dedicated account manager",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 18360,
+      "AED": 67308
+     },
+     "annual_monthly": {
+      "USD": 1530,
+      "AED": 5609
+     },
+     "messages": null
+    }
+   ],
+   "addons": [
+    "msgs",
+    "wa",
+    "crm"
+   ]
+  },
+  {
+   "id": "aura",
+   "name": "AURA",
+   "category": "Ecommerce",
+   "title": "AURA — AI Sales & Support Agent for Ecommerce",
+   "url": "/ai-agents/ecommerce/",
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 685,
+      "AED": 2500
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Shopify store chat",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 6984,
+      "AED": 25500
+     },
+     "annual_monthly": {
+      "USD": 582,
+      "AED": 2125
+     },
+     "messages": 5000
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1065,
+      "AED": 3900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + WhatsApp, order status and upsell",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 10860,
+      "AED": 39780
+     },
+     "annual_monthly": {
+      "USD": 905,
+      "AED": 3315
+     },
+     "messages": 12000
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "RAG trained on your catalog, 3 agents",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "messages": 20000
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 1500,
+      "AED": 5499
+     },
+     "from": true,
+     "popular": false,
+     "includes": "Multi-store, custom integrations",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 15300,
+      "AED": 56088
+     },
+     "annual_monthly": {
+      "USD": 1275,
+      "AED": 4674
+     },
+     "messages": null
+    }
+   ],
+   "addons": [
+    "msgs",
+    "wa",
+    "crm"
+   ]
+  },
+  {
+   "id": "nova",
+   "name": "Nova",
+   "category": "Hospitality",
+   "title": "Nova — AI Booking Agent for Hotels & Restaurants",
+   "url": "/ai-agents/hospitality/",
+   "draft_features": true,
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 685,
+      "AED": 2500
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Website booking chat",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 6984,
+      "AED": 25500
+     },
+     "annual_monthly": {
+      "USD": 582,
+      "AED": 2125
+     },
+     "messages": 5000
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1065,
+      "AED": 3900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + WhatsApp reminders, no-show reduction",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 10860,
+      "AED": 39780
+     },
+     "annual_monthly": {
+      "USD": 905,
+      "AED": 3315
+     },
+     "messages": 12000
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Multi-location, staff routing",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "messages": 20000
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 1800,
+      "AED": 6599
+     },
+     "from": true,
+     "popular": false,
+     "includes": "Hotel and restaurant groups, custom integrations",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 18360,
+      "AED": 67308
+     },
+     "annual_monthly": {
+      "USD": 1530,
+      "AED": 5609
+     },
+     "messages": null
+    }
+   ],
+   "addons": [
+    "msgs",
+    "wa",
+    "crm"
+   ]
+  },
+  {
+   "id": "luna",
+   "name": "Luna",
+   "category": "Health & fitness",
+   "title": "Luna — AI Booking Agent for Clinics, Gyms & Studios",
+   "url": "/ai-agents/health-fitness/",
+   "draft_features": true,
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 685,
+      "AED": 2500
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Appointment and class booking chat",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 6984,
+      "AED": 25500
+     },
+     "annual_monthly": {
+      "USD": 582,
+      "AED": 2125
+     },
+     "messages": 5000
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1065,
+      "AED": 3900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + WhatsApp reminders, membership renewal nudges",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 10860,
+      "AED": 39780
+     },
+     "annual_monthly": {
+      "USD": 905,
+      "AED": 3315
+     },
+     "messages": 12000
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Multi-branch",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "messages": 20000
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 1800,
+      "AED": 6599
+     },
+     "from": true,
+     "popular": false,
+     "includes": "Clinic, gym and studio chains",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 18360,
+      "AED": 67308
+     },
+     "annual_monthly": {
+      "USD": 1530,
+      "AED": 5609
+     },
+     "messages": null
+    }
+   ],
+   "addons": [
+    "msgs",
+    "wa",
+    "crm"
+   ]
+  },
+  {
+   "id": "lara",
+   "name": "Lara",
+   "category": "Car rental",
+   "title": "Lara — AI Booking Agent for Car Rental Companies",
+   "url": "/ai-agents/car-rental/",
+   "draft_features": true,
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 685,
+      "AED": 2500
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Website chat for rental enquiries",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 6984,
+      "AED": 25500
+     },
+     "annual_monthly": {
+      "USD": 582,
+      "AED": 2125
+     },
+     "messages": 5000
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1065,
+      "AED": 3900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + WhatsApp, booking requests and reminders",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 10860,
+      "AED": 39780
+     },
+     "annual_monthly": {
+      "USD": 905,
+      "AED": 3315
+     },
+     "messages": 12000
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Multi-branch fleets",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "messages": 20000
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 1800,
+      "AED": 6599
+     },
+     "from": true,
+     "popular": false,
+     "includes": "Rental chains, custom integrations",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_total": {
+      "USD": 18360,
+      "AED": 67308
+     },
+     "annual_monthly": {
+      "USD": 1530,
+      "AED": 5609
+     },
+     "messages": null
+    }
+   ],
+   "addons": [
+    "msgs",
+    "wa",
+    "crm"
+   ]
+  },
+  {
+   "id": "stella",
+   "name": "Stella",
+   "category": "AI calling agent",
+   "title": "Stella — AI Calling Agent for Businesses",
+   "url": "/ai-agents/ai-calling-agent/",
+   "usage_based": true,
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 820,
+      "AED": 3000
+     },
+     "from": false,
+     "popular": false,
+     "includes": "1 phone line, 2 calls at once, then AED 1.20/min",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 697,
+      "AED": 2550
+     },
+     "annual_total": {
+      "USD": 8364,
+      "AED": 30600
+     },
+     "minutes": 500
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1855,
+      "AED": 6800
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + CRM and calendar sync, 5 calls at once, then AED 1.20/min",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 1577,
+      "AED": 5780
+     },
+     "annual_total": {
+      "USD": 18924,
+      "AED": 69360
+     },
+     "minutes": 1500
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 2670,
+      "AED": 9800
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Multiple lines, 10 calls at once, call routing, then AED 1.20/min",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 2270,
+      "AED": 8330
+     },
+     "annual_total": {
+      "USD": 27240,
+      "AED": 99960
+     },
+     "minutes": 4000
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 0,
+      "AED": 0
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Volume-negotiated rate, unlimited lines",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 0,
+      "AED": 0
+     },
+     "annual_total": {
+      "USD": 0,
+      "AED": 0
+     },
+     "minutes": null
+    }
+   ],
+   "outbound": [
+    {
+     "id": "out1",
+     "name": "Outbound 1",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Lead follow-up and reminder calls, up to 3 redial attempts per contact",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     },
+     "hours": 50,
+     "contacts": 2500
+    },
+    {
+     "id": "out2",
+     "name": "Outbound 2",
+     "price": {
+      "USD": 2700,
+      "AED": 9900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Outbound 1 + CRM and webhook integration, priority dialling",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 2295,
+      "AED": 8415
+     },
+     "annual_total": {
+      "USD": 27540,
+      "AED": 100980
+     },
+     "hours": 150,
+     "contacts": 7500
+    },
+    {
+     "id": "outx",
+     "name": "Custom",
+     "price": {
+      "USD": 0,
+      "AED": 0
+     },
+     "from": false,
+     "popular": false,
+     "includes": "15,000+ contacts a month, dedicated account manager",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 0,
+      "AED": 0
+     },
+     "annual_total": {
+      "USD": 0,
+      "AED": 0
+     },
+     "hours": null,
+     "contacts": null
+    }
+   ],
+   "setup_fee": {
+    "out1": {
+     "USD": 2725,
+     "AED": 10000
+    },
+    "out2": {
+     "USD": 3405,
+     "AED": 12500
+    },
+    "outx": {
+     "USD": 4085,
+     "AED": 15000
+    }
+   },
+   "addons": [
+    "wa",
+    "crm"
+   ]
+  },
+  {
+   "id": "lilia",
+   "name": "Lilia",
+   "category": "Personal assistant",
+   "title": "Lilia — Personal AI Assistant for Business Owners",
+   "url": "/ai-agents/personal-assistant/",
+   "tiers": [
+    {
+     "id": "starter",
+     "name": "Starter",
+     "price": {
+      "USD": 685,
+      "AED": 2500
+     },
+     "from": false,
+     "popular": false,
+     "includes": "WhatsApp assistant, daily briefing, reminders, 1 inbox + 1 calendar",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 582,
+      "AED": 2125
+     },
+     "annual_total": {
+      "USD": 6984,
+      "AED": 25500
+     }
+    },
+    {
+     "id": "growth",
+     "name": "Growth",
+     "price": {
+      "USD": 1065,
+      "AED": 3900
+     },
+     "from": false,
+     "popular": true,
+     "includes": "Everything in Starter + email drafting and inbox triage, meeting scheduling, voice notes",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 905,
+      "AED": 3315
+     },
+     "annual_total": {
+      "USD": 10860,
+      "AED": 39780
+     }
+    },
+    {
+     "id": "scale",
+     "name": "Scale",
+     "price": {
+      "USD": 1335,
+      "AED": 4900
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Owner + up to 4 assistants, task tools, custom workflows",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 1135,
+      "AED": 4165
+     },
+     "annual_total": {
+      "USD": 13620,
+      "AED": 49980
+     }
+    },
+    {
+     "id": "enterprise",
+     "name": "Enterprise",
+     "price": {
+      "USD": 0,
+      "AED": 0
+     },
+     "from": false,
+     "popular": false,
+     "includes": "Executive teams, private deployment, custom integrations",
+     "checkout": {
+      "monthly": {
+       "USD": null,
+       "AED": null
+      },
+      "annual": {
+       "USD": null,
+       "AED": null
+      }
+     },
+     "annual_monthly": {
+      "USD": 0,
+      "AED": 0
+     },
+     "annual_total": {
+      "USD": 0,
+      "AED": 0
+     }
+    }
+   ],
+   "setup_fee": {
+    "starter": {
+     "USD": 1365,
+     "AED": 5000
+    },
+    "growth": {
+     "USD": 2725,
+     "AED": 10000
+    },
+    "scale": {
+     "USD": 4085,
+     "AED": 15000
+    },
+    "enterprise": {
+     "USD": 4085,
+     "AED": 15000
+    }
+   },
+   "addons": [
+    "msgs",
+    "wa",
+    "crm"
+   ]
+  }
+ ],
+ "addons": [
+  {
+   "id": "msgs",
+   "price": {
+    "USD": 99,
+    "AED": 369
+   },
+   "per": "mo"
+  },
+  {
+   "id": "wa",
+   "price": {
+    "USD": 199,
+    "AED": 729
+   },
+   "per": "mo"
+  },
+  {
+   "id": "crm",
+   "price": {
+    "USD": 100,
+    "AED": 369
+   },
+   "per": "once"
+  }
+ ],
+ "affiliate": {
+  "setup_rate": 0.1,
+  "monthly_rate": 0.15,
+  "months": 12,
+  "cookie_days": 90,
+  "hold_days": 30,
+  "min_payout_aed": 500,
+  "payout": "Monthly, by bank transfer or Wise",
+  "click_webhook": "",
+  "apply_webhook": "",
+  "whatsapp": "971585456331",
+  "note": "Change rates here, rebuild, publish. Commission is paid on invoices the client has actually paid."
+ }
+}

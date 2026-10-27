@@ -1,0 +1,44 @@
+/* DigiPromise Arabic / RTL layer — loaded only on /ar/ pages */
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:100 900;font-display:swap;src:url(noto-arabic.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E}
+:root{--font:'Noto Sans Arabic','Inter',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif}
+html[dir="rtl"] body{font-family:var(--font);line-height:1.8}
+/* Arabic letters must stay joined: no tracking, no uppercase */
+html[dir="rtl"] *{letter-spacing:0!important}
+html[dir="rtl"] .eyebrow,html[dir="rtl"] .ps-label,html[dir="rtl"] .pcard .tag,html[dir="rtl"] .cf-item .tag{text-transform:none}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3{line-height:1.35;font-weight:800}
+html[dir="rtl"] .hero2 h1{line-height:1.3}
+html[dir="rtl"] .feat h2{line-height:1.25}
+/* mirror inline left alignment used in a few sections */
+html[dir="rtl"] [style*="text-align:left"]{text-align:right!important}
+html[dir="rtl"] .persona,html[dir="rtl"] .cmp,html[dir="rtl"] .tpanel,html[dir="rtl"] .stage-card,html[dir="rtl"] .dash,html[dir="rtl"] .form{text-align:right}
+html[dir="rtl"] .rot{text-align:right}
+html[dir="rtl"] .rot span{left:auto;right:0}
+/* check marks and bullets */
+html[dir="rtl"] .tier li,html[dir="rtl"] .tick li,html[dir="rtl"] .tpanel li{padding:6px 26px 6px 0}
+html[dir="rtl"] .tick li,html[dir="rtl"] .tpanel li{padding:10px 30px 10px 0}
+html[dir="rtl"] .tier li::before,html[dir="rtl"] .tick li::before,html[dir="rtl"] .tpanel li::before{left:auto;right:4px}
+html[dir="rtl"] .tier li::before{right:0}
+html[dir="rtl"] .steps li::before{left:auto;right:0}
+/* breadcrumb separator */
+html[dir="rtl"] .crumb li+li::before{margin-right:0;margin-left:6px}
+/* timeline line fills from the right */
+html[dir="rtl"] .tl::after{transform-origin:right}
+/* marquee + ticker keep moving; mask stays symmetric */
+html[dir="rtl"] .marq,html[dir="rtl"] .ticker{direction:ltr}html[dir="rtl"] .ticker span{direction:rtl;unicode-bidi:isolate}
+/* dropdown menu */
+html[dir="rtl"] .dd-menu{left:auto;right:-16px}
+/* chat bubbles: customer on the left, agent on the right (Arabic apps) */
+html[dir="rtl"] .msg.u{border-bottom-right-radius:16px;border-bottom-left-radius:4px}
+html[dir="rtl"] .msg.b{border-bottom-left-radius:16px;border-bottom-right-radius:4px}
+/* arrows that point "forward" */
+html[dir="rtl"] .flip-x{display:inline-block;transform:scaleX(-1)}
+/* tables */
+html[dir="rtl"] .cmp th,html[dir="rtl"] .cmp td{text-align:right}
+/* founder block */
+html[dir="rtl"] .founder{direction:rtl}
+/* language switch */
+.lang-sw{font-weight:700;text-decoration:none;color:var(--ink)}
+.lang-sw:hover{color:var(--purple)}
+/* mixed Arabic/English text: each bubble or quote picks its own direction */
+html[dir="rtl"] .msg,html[dir="rtl"] blockquote,html[dir="rtl"] .digi-msgs,html[dir="rtl"] .feed b{unicode-bidi:plaintext}
+html[dir="rtl"] .rot{min-width:0}

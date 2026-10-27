@@ -1,0 +1,69 @@
+/* DigiPromise restyle for WordPress-rendered pages (AI News archive, posts). Loaded only on WP pages via wp-chrome-head.html */
+/* ---- page title banner: light purple hero, black title, no robot/button ---- */
+#pxl-page-title-elementor .elementor-top-section{background:linear-gradient(180deg,#F0E8FF 0%,#E8D5FF 55%,#F8F4FF 100%)!important;min-height:0!important;padding:56px 16px 48px!important;margin:0!important}
+#pxl-page-title-elementor .elementor-background-overlay,#pxl-page-title-elementor .elementor-top-section::before,#pxl-page-title-elementor .elementor-top-section::after{display:none!important}
+#pxl-page-title-elementor .elementor-container{min-height:0!important;height:auto!important;max-width:960px!important;margin:0 auto!important}
+#pxl-page-title-elementor .elementor-widget:not(.elementor-widget-pxl_heading):not(.elementor-widget-pxl_breadcrumb):not([class*=breadcrumb]){display:none!important}
+#pxl-page-title-elementor .elementor-widget-wrap{justify-content:center!important;text-align:center!important;align-content:center!important}
+#pxl-page-title-elementor .elementor-widget-pxl_heading{width:100%!important;text-align:center!important;margin:0!important}
+#pxl-page-title-elementor .elementor-widget-pxl_heading::before{content:"DigiPromise · AI News";display:inline-block;margin-bottom:14px;padding:6px 14px;border-radius:999px;background:#fff;color:#5B1FA0;font:700 13px/1.4 "Inter",system-ui,sans-serif;letter-spacing:.02em;box-shadow:0 4px 16px rgba(123,47,190,.12)}
+#pxl-page-title-elementor h1,#pxl-page-title-elementor h1 *{font-family:"Inter",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(30px,4.4vw,52px)!important;line-height:1.12!important;letter-spacing:-.02em!important;color:#1A1A2E!important;-webkit-text-fill-color:#1A1A2E!important;background:none!important;text-align:center!important;max-width:900px;margin:0 auto!important;text-transform:none!important}
+
+/* ---- body type ---- */
+#pxl-main :is(h1,h2,h3,h4,h5,h6,p,a,li,blockquote,td,th,label,input,button,textarea,figcaption,time,strong,em):not([class*=icon]):not([class*=caseicon]){font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif!important}
+#pxl-main :is(h1,h2,h3,h4,h5,h6){color:#1A1A2E!important;font-weight:700!important;letter-spacing:-.01em}
+#pxl-main{padding-top:40px}
+#pxl-main a{transition:color .2s}
+#pxl-main a:hover{color:#7B2FBE!important}
+
+/* ---- archive cards ---- */
+#pxl-content-main article.pxl---post{background:#fff!important;border:1px solid rgba(123,47,190,.15)!important;border-radius:20px!important;box-shadow:0 8px 30px rgba(18,12,42,.06)!important;margin-bottom:24px!important;overflow:hidden}
+#pxl-content-main article.pxl---post .pxl-item--holder{padding:28px!important}
+#pxl-content-main .pxl-item--title,#pxl-content-main .pxl-item--title a{font-size:22px!important;line-height:1.3!important;color:#1A1A2E!important}
+#pxl-content-main .pxl-item--excerpt{color:#3A3A5A!important;font-size:16px!important;line-height:1.65!important}
+#pxl-content-main .pxl-blog-meta,#pxl-content-main .pxl-blog-meta *{color:#5F5F80!important;font-size:14px!important}
+#pxl-content-main .pxl-item--readmore .pxl-button{display:inline-flex!important;align-items:center;gap:8px;padding:9px 18px!important;border-radius:999px!important;background:#F1E8FF!important;color:#5B1FA0!important;font-weight:700!important;font-size:14px!important;border:0!important}
+#pxl-content-main .pxl-item--readmore .pxl-button:hover{background:#E2CCFF!important}
+
+/* ---- pagination ---- */
+.pxl-pagination-wrap .page-numbers{border-radius:999px!important;border:1px solid rgba(123,47,190,.2)!important;background:#fff!important;color:#1A1A2E!important;font-family:"Inter",system-ui,sans-serif!important}
+.pxl-pagination-wrap .page-numbers.current,.pxl-pagination-wrap .page-numbers:hover{background:#F1E8FF!important;color:#5B1FA0!important;border-color:#F1E8FF!important}
+
+/* ---- sidebar ---- */
+#pxl-sidebar-area .widget{background:#F8F4FF!important;border:0!important;border-radius:20px!important;padding:24px!important;margin-bottom:20px!important}
+#pxl-sidebar-area .widget-title,#pxl-sidebar-area .widget-title *{font-family:"Inter",system-ui,sans-serif!important;font-weight:800!important;font-size:18px!important;color:#1A1A2E!important}
+#pxl-sidebar-area .widget a{color:#3A3A5A!important}
+#pxl-sidebar-area .widget a:hover{color:#7B2FBE!important}
+#pxl-sidebar-area input[type=search],#pxl-sidebar-area input[type=text]{border-radius:999px 0 0 999px!important;border:1px solid rgba(123,47,190,.25)!important;background:#fff!important}
+#pxl-sidebar-area button,#pxl-sidebar-area input[type=submit]{background:#7B2FBE!important;border-radius:0 999px 999px 0!important}
+#pxl-sidebar-area .tagcloud a,#pxl-sidebar-area .wp-block-tag-cloud a{border-radius:999px!important;background:#fff!important;border:1px solid rgba(123,47,190,.15)!important;color:#5B1FA0!important}
+
+/* ---- single post body ---- */
+.single-post #pxl-content-main{background:#fff;border:1px solid rgba(123,47,190,.15);border-radius:20px;padding:32px;box-shadow:0 8px 30px rgba(18,12,42,.06)}
+.single-post #pxl-content-main :is(p,li){font-size:17px!important;line-height:1.75!important;color:#3A3A5A!important}
+.single-post #pxl-content-main :is(h2,h3){margin-top:1.6em!important}
+.single-post #pxl-content-main blockquote{border-left:4px solid #7B2FBE!important;background:#F8F4FF!important;border-radius:12px;padding:16px 20px!important}
+@media(max-width:767px){#pxl-page-title-elementor .elementor-top-section{padding:40px 16px 32px!important}#pxl-content-main article.pxl---post .pxl-item--holder{padding:20px!important}.single-post #pxl-content-main{padding:20px}}
+/* fixes: breadcrumb strip, meta font, read-more icon */
+#pxl-page-title-elementor .elementor-section:has(.pxl-breadcrumb){background:#F8F4FF!important;padding:0 16px 18px!important;margin:0!important;min-height:0!important}
+#pxl-page-title-elementor .elementor-container:has(.pxl-breadcrumb),#pxl-page-title-elementor .elementor-column:has(.pxl-breadcrumb),#pxl-page-title-elementor .elementor-widget-wrap:has(.pxl-breadcrumb){min-height:0!important;padding:0!important;justify-content:center!important}
+#pxl-page-title-elementor .elementor-element:has(.pxl-breadcrumb){margin:0 auto!important;width:auto!important}
+.pxl-breadcrumb-wrap{justify-content:center!important}
+.pxl-breadcrumb,.pxl-breadcrumb *{font:500 14px/1.5 "Inter",system-ui,sans-serif!important;color:#5F5F80!important}
+.pxl-breadcrumb a:hover{color:#7B2FBE!important}
+.pxl-breadcrumb li:last-child,.pxl-breadcrumb li:last-child *{color:#5B1FA0!important;font-weight:700!important}
+#pxl-main{padding-top:32px!important}
+#pxl-main .pxl-blog-meta,#pxl-main .pxl-blog-meta *,#pxl-main .pxl-item--excerpt,#pxl-main .pxl-item--excerpt *{font-family:"Inter",system-ui,sans-serif!important}
+#pxl-content-main .pxl-item--readmore .pxl--btn-icon{display:none!important}
+#pxl-content-main .pxl-item--readmore .pxl--btn-text::after{content:" →"}
+/* breadcrumb inside the banner, under the title */
+#pxl-page-title-elementor .elementor-absolute{position:static!important;inset:auto!important;transform:none!important;margin:18px auto 0!important;width:100%!important;display:flex!important;justify-content:center!important}
+#pxl-page-title-elementor .elementor-widget-wrap{flex-direction:column!important;align-items:center!important}
+#pxl-page-title-elementor .pxl-breadcrumb{padding:0!important;justify-content:center!important;flex-wrap:wrap}
+#pxl-page-title-elementor .elementor-top-section{background-image:linear-gradient(180deg,#F0E8FF 0%,#E8D5FF 55%,#F8F4FF 100%)!important}
+/* single post: one card, no repeated title, no theme grid decoration */
+.single-post #pxl-content-main article.pxl---post{border:0!important;box-shadow:none!important;border-radius:0!important}
+.single-post #pxl-content-main article.pxl---post .pxl-item--holder{padding:0!important}
+.single-post #pxl-content-main article.pxl---post>.pxl-item--title,.single-post #pxl-content-main .pxl-item--holder>.pxl-item--title{display:none!important}
+#pxl-main::before,#pxl-main::after,#pxl-wapper::before{background-image:none!important}
+.pxl-scroll-top{display:none!important}
